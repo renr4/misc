@@ -1,0 +1,32 @@
+--- youtubeUnblock.c	2024-10-19 09:17:48.532765153 +0300
++++ youtubeUnblock_mod.c	2024-10-19 10:32:45.407695721 +0300
+@@ -454,6 +454,29 @@
+ 	struct nlmsghdr *nlh;
+ 	char buf[BUF_SIZE];
+ 
++
++	// Asus-padavan kernel 3.4 support
++	// https://netfilter-devel.vger.kernel.narkive.com/1XqANuf1/patch-lnf-queue-src-pf-bind-unbind-is-ignored-in-3-8-and-later
++	// https://www.pacificsimplicity.ca/blog/libmnl-and-queuing-example/
++	// PF_BIND is not needed with kernels 3.8 and later
++	// Both commands are ignored by Linux kernel 3.8 and later versions
++	nlh = nfq_nlmsg_put(buf, NFQNL_MSG_CONFIG, queue_num);
++	// Unbinds from processing packets belonging to the given protocol family
++	nfq_nlmsg_cfg_put_cmd(nlh, AF_INET, NFQNL_CFG_CMD_PF_UNBIND);
++	if (mnl_socket_sendto(nl, nlh, nlh->nlmsg_len) < 0) {
++		perror("mnl_socket_send PF_UNBIND");
++		goto die;
++	}
++	nlh = nfq_nlmsg_put(buf, NFQNL_MSG_CONFIG, queue_num);
++	// Binds to process packets belonging to the given protocol family (ie. PF_INET, PF_INET6, etc)
++	nfq_nlmsg_cfg_put_cmd(nlh, AF_INET, NFQNL_CFG_CMD_PF_BIND);
++	if (mnl_socket_sendto(nl, nlh, nlh->nlmsg_len) < 0) {
++		perror("mnl_socket_send PF_BIND");
++		goto die;
++	}
++	// end padavan support
++
++
+ 	nlh = nfq_nlmsg_put(buf, NFQNL_MSG_CONFIG, queue_num);
+ 	nfq_nlmsg_cfg_put_cmd(nlh, AF_INET, NFQNL_CFG_CMD_BIND);
+ 
