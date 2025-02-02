@@ -14,12 +14,12 @@
 
 Сборка бинарника есть ниже, но можно взять готовый
 ```sh
-wget -qO- https://github.com/renr4/misc/padavan-yu/raw/refs/heads/main/youtubeUnblock.tar.gz | tar xvz -C /etc/storage/
+wget -qO- https://github.com/renr4/misc/raw/refs/heads/padavan-yu/main/youtubeUnblock.tar.gz | tar xvz -C /etc/storage/
 ```
 
 Ниже есть инструкция по сборке прошивки с NFQUEUE модулями, но также проще взять уже готовые
 ```sh
-wget -qO- https://github.com/renr4/misc/padavan-yu/raw/refs/heads/main/padavan-nfqueue.tar.gz | tar xvz -C /etc/storage/
+wget -qO- https://github.com/renr4/misc/raw/refs/heads/padavan-yu/main/padavan-nfqueue.tar.gz | tar xvz -C /etc/storage/
 ```
 
 ##### **[1]** Загружаем модули
@@ -45,7 +45,7 @@ iptables -t mangle -A FORWARD -p tcp --dport 443 -m connbytes --connbytes-dir or
 
 Если появляется ошибка `iptables: unknown option "--queue-num"`, то можно взять бинарник iptables уже с поддержкой queue-num
 ```sh
-wget -qO- https://github.com/renr4/misc/padavan-yu/raw/refs/heads/main/iptables-nfqueue.tar.gz | tar xvz -C /etc/storage/
+wget -qO- https://github.com/renr4/misc/raw/refs/heads/padavan-yu/main/iptables-nfqueue.tar.gz | tar xvz -C /etc/storage/
 ```
 и снова запустить ~первую второую! команду, добавив к ней абсолютный путь `/etc/storage/iptables -t mangle...`
 
@@ -88,7 +88,7 @@ export PATH=$PATH:`pwd`/padavan-ng/toolchain/out/bin
 Патч для ядра 3.4
 ```sh
 cd youtubeUnblock
-wget https://raw.githubusercontent.com/renr4/misc/padavan-yu/refs/heads/main/patch-padavan-kernel-3.4.diff
+wget https://raw.githubusercontent.com/renr4/misc/refs/heads/main/padavan-yu/patch-padavan-kernel-3.4.diff
 patch youtubeUnblock.c < patch-padavan-kernel-3.4.diff
 ```
 Сборка
