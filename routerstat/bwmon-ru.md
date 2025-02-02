@@ -6,11 +6,12 @@
 
 Если трафик считается неверно (сильно меньше), то нужно включить QoS, не выставляя при этом никаких ограничений. Это деактивирует NAT Offload.
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt1.png)
+<!-- ![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt1.png) -->
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt1.png" alt="" width="400" />
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt2.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt2.png" alt="" width="400" />
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt3.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt3.png" alt="" width="400" />
 
 ## Padavan
 
@@ -28,14 +29,14 @@ sed -i 's/\r//' /etc/storage/c2-bwmon.sh && chmod +x /etc/storage/c2-bwmon.sh &&
 
 Если трафик считается неверно (сильно меньше), то нужно выключить Offload на странице WAN.
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan1.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan1.png" alt="" width="400" />
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan2.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan2.png" alt="" width="400" />
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan3.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan3.png" alt="" width="400" />
 
 ## Tp-link with green UI
 
 На tp-link-ах трафик включается в разделе Statistics, но считается общее значение и переданного и полученного и с этим ничего не поделать.
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/tp-link1.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/tp-link1.png" alt="" width="400" />
