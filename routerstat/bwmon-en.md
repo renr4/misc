@@ -6,12 +6,12 @@ Starting with some build (approx 45219), bwmon has user traffic built-in and the
 
 If the traffic is counted incorrectly (much less than it should be), then you can enable QoS, but do not set any restrictions. This will disable NAT Offload.
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt1.png)
-<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan1.png" alt="" style="max-width: 500px"/>
+<!-- ![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt1.png) -->
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt1.png" alt="" width="400" />
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt2.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt2.png" alt="" width="400" />
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt3.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt3.png" alt="" width="400" />
 
 ## Padavan
 
@@ -29,14 +29,14 @@ And then you just need to activate and set up Cron on the Services page  `* * * 
 
 If the traffic is counted incorrectly (much less than it should be), then you can disable Offload on the WAN page.
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan1.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan1.png" alt="" width="400" />
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan2.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan2.png" alt="" width="400" />
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan3.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan3.png" alt="" width="400" />
 
 ## Tp-link with green UI
 
 On tp-links per-user traffic can be activated on the Statistics page, but unfortunately it’s not divided into sent/received.
 
-![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/tp-link1.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/tp-link1.png" alt="" width="400" />
