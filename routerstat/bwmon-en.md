@@ -7,6 +7,7 @@ Starting with some build (approx 45219), bwmon has user traffic built-in and the
 If the traffic is counted incorrectly (much less than it should be), then you can enable QoS, but do not set any restrictions. This will disable NAT Offload.
 
 ![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt1.png)
+<img src="https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/padavan1.png" alt="" width="400"/>
 
 ![enter image description here](https://raw.githubusercontent.com/renr4/misc/refs/heads/main/routerstat/ddwrt2.png)
 
