@@ -88,7 +88,7 @@ export PATH=$PATH:`pwd`/padavan-ng/toolchain/out/bin
 Патч для ядра 3.4
 ```sh
 cd youtubeUnblock
-wget https://raw.githubusercontent.com/renr4/misc/refs/heads/main/patch/padavan-yu-padavan-kernel-3.4.diff
+wget https://raw.githubusercontent.com/renr4/misc/refs/heads/main/padavan-yu/patch-padavan-kernel-3.4.diff
 patch youtubeUnblock.c < patch-padavan-kernel-3.4.diff
 ```
 Сборка
